@@ -148,15 +148,18 @@ def slow_get_positional_embeddings(sequence_length, d):
             result[i, 2*j + 1] = math.cos(i / (10000 ** (2 * j / d)))
     return result 
 
-def get_positional_embeddings(sequence_length, d):
+  def get_positional_embeddings(sequence_length, d):
     result = torch.zeros(sequence_length, d)
     positions = torch.arange(sequence_length).unsqueeze(1)
     div_term = torch.exp(torch.arange(0, d, 2) * (-math.log(10000.0) / d))
     
     result[:, 0::2] = torch.sin(positions * div_term)
-    result[:, 1::2] = torch.cos(positions * div_term)
-    
-    return result  
+    if d % 2 == 1:
+        result[:, 1::2] = torch.cos(positions * div_term[:-1])
+    else:
+        result[:, 1::2] = torch.cos(positions * div_term)
+
+    return result
 
 class slowMyMSA(nn.Module):
     """
