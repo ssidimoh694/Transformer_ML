@@ -364,7 +364,6 @@ class Trainer(object):
         self.model.train()
         for ep in range(self.epochs):
             self.train_one_epoch(dataloader)
-            break
     def train_one_epoch(self, dataloader):
         """
         Train the model for ONE epoch.
@@ -389,7 +388,6 @@ class Trainer(object):
 
             # Zero-out the accumulated gradients.
             self.optimizer.zero_grad()
-            break
             #print('it {}/{}  '.format(it + 1, len(self.dataloader_train)), end='')
 
 
