@@ -74,16 +74,16 @@ def main(args):
         for i in range(30):
             
             n_blocks = random.choice(n_blocks_vals)
-            n_heads = random.choice(n_heads_vals)
+            hidden_d = random.choice(hidden_d_vals)
             while True:
-                hidden_d = random.choice(hidden_d_vals)
+                n_heads = random.choice(n_heads_vals)
                 if hidden_d % n_heads == 0:
                     break
             lr = random.choice(lr_vals)
 
             print(f"Run {i+1}:")
             print(f"  hidden_d: {hidden_d}, n_blocks: {n_blocks}, n_heads: {n_heads}, lr: {lr}")
-            model = MyViT((1, 28, 28), n_patches=7, n_blocks=n_blocks, hidden_d=hidden_d, n_heads=hidden_d, out_d=n_classes)
+            model = MyViT((1, 28, 28), n_patches=7, n_blocks=n_blocks, hidden_d=hidden_d, n_heads=n_heads, out_d=n_classes)
             criterion = nn.CrossEntropyLoss()
             optimizer = torch.optim.Adam(model.parameters(), lr=lr)
             method_obj = Trainer(model, criterion, optimizer, epochs=15)
