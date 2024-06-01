@@ -1,0 +1,99 @@
+Mes variances PCA
+
+0 dimensions explain 0.0 of the variance
+Using PCA
+10 dimensions explain 65.78106430058335 of the variance
+Using PCA
+20 dimensions explain 74.29617595710647 of the variance
+Using PCA
+30 dimensions explain 78.41923165647295 of the variance
+Using PCA
+40 dimensions explain 81.06714162336203 of the variance
+Using PCA
+50 dimensions explain 83.09029107529496 of the variance
+Using PCA
+60 dimensions explain 84.6876575262356 of the variance
+Using PCA
+70 dimensions explain 86.03355307814367 of the variance
+Using PCA
+80 dimensions explain 87.14934374652677 of the variance
+Using PCA
+90 dimensions explain 88.1066736933262 of the variance
+Using PCA
+100 dimensions explain 88.94442674300811 of the variance
+Using PCA
+110 dimensions explain 89.68410458014895 of the variance
+Using PCA
+120 dimensions explain 90.35125178413537 of the variance
+Using PCA
+130 dimensions explain 90.95305036531776 of the variance
+Using PCA
+140 dimensions explain 91.49686990759673 of the variance
+Using PCA
+150 dimensions explain 91.99391848181679 of the variance
+Using PCA
+160 dimensions explain 92.45239569122975 of the variance
+Using PCA
+170 dimensions explain 92.87534528090423 of the variance
+Using PCA
+180 dimensions explain 93.26812471391592 of the variance
+Using PCA
+190 dimensions explain 93.63305275661135 of the variance
+
+learning rate 
+accuracy for 1e-05 is 19.066666666666666 
+finished test lr
+accuracy for 2e-05 is 23.474999999999998 
+finished test lr
+accuracy for 3e-05 is 34.59166666666667 
+finished test lr
+accuracy for 5e-05 is 43.21666666666666 
+finished test lr
+accuracy for 7e-05 is 48.61666666666667 
+finished test lr
+accuracy for 9e-05 is 53.63333333333333 
+finished test lr
+accuracy for 0.0001 is 61.1 
+
+finished test lr
+accuracy for 0.0001 is 48.68333333333334 
+finished test lr
+accuracy for 0.0003 is 57.34166666666667 
+finished test lr
+accuracy for 0.0005 is 65.46666666666667 
+finished test lr
+accuracy for 1 is 45.80833333333334 with 0.0001
+
+accuracy for 1 is 40.5 with 0.001
+finished test blocks
+accuracy for 2 is 50.575 with 0.001
+finished test blocks
+accuracy for 3 is 49.416666666666664 with 0.001
+finished test blocks
+accuracy for 4 is 42.
+
+BLOCKS
+accuracy for 1 is 53.19166666666667 with 0.0001
+finished test blocks
+accuracy for 2 is 55.95833333333333 with 0.0001
+finished test blocks
+accuracy for 3 is 59.824999999999996 with 0.0001
+finished test blocks
+accuracy for 4 is 66.85833333333333 with 0.0001
+finished test blocks
+
+accuracy for 5 is 65.61666666666667 with 0.0001
+finished test blocks
+accuracy for 7 is 65.975 with 0.0001
+finished test blocks
+
+accuracy for 8 is 62.958333333333336 with 0.0001
+finished test blocks
+accuracy for 10 is 58.90833333333333 with 0.0001
+finished test blocks
+accuracy for 12 is 60.00833333333333 with 0.0001
+finished test blocks
+accuracy for 14 is 63.40833333333333 with 0.0001
+finished test blocks
+accuracy for 16 is 60.975 with 0.0001
+finished test blocks
